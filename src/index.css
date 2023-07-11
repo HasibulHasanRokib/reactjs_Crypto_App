@@ -1,0 +1,144 @@
+
+body{
+    background-color:#2c3034;    
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.app__body{
+    /* background-color: aqua; */
+    height: 100vh;
+    width: 1200px;
+    margin:0 auto;
+    margin-top: 1rem;
+}
+.detail__body{
+    /* background-color: aqua; */
+    height: 100vh;
+    width: 900px;
+    margin:0 auto;
+    margin-top: 1rem;
+}
+.item__head {
+    align-items: center;
+    background-color: #26272b;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #18191b;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+    padding: 0.7rem 1rem;
+    color: #fff; 
+    font-weight: 600;
+}
+.item__head > div{
+    text-align: center;
+    /* border: 3px solid black; */
+    margin-right: 5rem;
+
+}
+.coin__row{
+    align-items: center;
+    background-color: #26272b;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #18191b;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+    padding: 0.7rem 1rem;
+    color: #fff; 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.coin__row:hover{
+    transform: scale(1.02);
+    background-color: #333;
+}
+.coin__img{
+    width: 35px;
+    margin: 0 5px;
+}
+.link__name{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.content{
+    background-color: #26272b;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #18191b;
+    color: #fff;  
+    margin: 2rem 1rem;
+    padding: 0.7rem 1rem; 
+}
+.title{
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.name{
+    text-transform: capitalize;
+
+}
+.rank{
+    background-color: blue;
+    display: inline-block;
+    padding:0.2rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+.title-two{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 32rem;
+}
+.row{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* border-bottom: 1px solid #5f5252; */
+    align-items: center;
+}
+.row h4{
+    font-size: 1rem;
+    
+}
+
+.status{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
