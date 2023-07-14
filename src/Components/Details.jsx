@@ -75,19 +75,19 @@ useEffect(()=>{
               <th>1h</th>
               <th>24h</th>
               <th>7d</th>
-              <th>14d</th>
-              <th>30d</th>
-              <th>1yr</th>
+              <th className="display-none">14d</th>
+              <th className="display-none">30d</th>
+              <th className="display-none">1yr</th>
             </tr>
           </thead>
           <tbody>
             <tr>
             <td>{data.market_data ?.price_change_percentage_1h_in_currency ? <p>{data.market_data.price_change_percentage_1h_in_currency.usd}%</p>:null}</td>
             <td>{data.market_data ?.price_change_percentage_24h_in_currency ? <p>{data.market_data.price_change_percentage_24h_in_currency.usd}%</p>:null}</td>
-            <td>{data.market_data ?.price_change_percentage_7d_in_currency ? <p>{data.market_data.price_change_percentage_7d_in_currency.usd}%</p>:null}</td>
-            <td>{data.market_data ?.price_change_percentage_14d_in_currency ? <p>{data.market_data.price_change_percentage_14d_in_currency.usd}%</p>:null}</td>
-            <td>{data.market_data ?.price_change_percentage_30d_in_currency ? <p>{data.market_data.price_change_percentage_30d_in_currency.usd}%</p>:null}</td>
-            <td>{data.market_data ?.price_change_percentage_1y_in_currency ? <p>{data.market_data.price_change_percentage_1y_in_currency.usd}%</p>:null}</td>
+            <td >{data.market_data ?.price_change_percentage_7d_in_currency ? <p>{data.market_data.price_change_percentage_7d_in_currency.usd}%</p>:null}</td>
+            <td className="display-none">{data.market_data ?.price_change_percentage_14d_in_currency ? <p>{data.market_data.price_change_percentage_14d_in_currency.usd}%</p>:null}</td>
+            <td className="display-none">{data.market_data ?.price_change_percentage_30d_in_currency ? <p>{data.market_data.price_change_percentage_30d_in_currency.usd}%</p>:null}</td>
+            <td className="display-none">{data.market_data ?.price_change_percentage_1y_in_currency ? <p>{data.market_data.price_change_percentage_1y_in_currency.usd}%</p>:null}</td>
 
               
             </tr>
