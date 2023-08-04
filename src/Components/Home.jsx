@@ -53,10 +53,10 @@ const prePage=()=>{
 const loadingMessage=<Triangle
 height="80"
 width="80"
-color="#fff"
+color="white"
 ariaLabel="triangle-loading"
-wrapperStyle={{margin:"10rem 34rem"}}
-wrapperClassName=""
+wrapperStyle={{margin:"10rem 38rem"}}
+wrapperClassName="loading"
 visible={true}
 />
 
@@ -66,35 +66,35 @@ visible={true}
      <div className="app__body">
     <div id="home" className="header-section">     
       <h1 className="font-bold text-[5rem] flex "><img className="hero-img display-none" src="https://coindom-crypto-search.vercel.app/static/media/bitcoin.e146d46fb598ae0d8f43.png" alt="" />TRACK AND TRADE <img className="hero-img display-none" src="https://coindom-crypto-search.vercel.app/static/media/ethereum.c6cffe78f0c6abc85da9.png" alt="" /></h1>
-      <p className="font-bold text-[6rem] ">CRYPTO CURRENCIES</p>
+      <p className="font-bold text-[6rem] text-colors">CRYPTO CURRENCIES</p>
       <a href="#market-section" className="price-btn">See Price</a>
      <div className="flex gap-[1rem] justify-center my-[5rem] display-none">
       <div className="card">
         <img className="w-[5rem]" src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="" />
         <div className="card-body">
           <h3>Bitcoin<samp className="text-red-500 font-bold">-1.07%</samp></h3>
-          <p>$29,117.00</p>
+          <h5>$29,117.00</h5>
         </div>
       </div>
       <div className="card">
         <img className="w-[5rem]" src="https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880" alt="" />
         <div className="card-body">
           <h3>Ethereum<samp className="text-red-500 font-bold">-1.25%</samp></h3>
-          <p>$1,835.02</p>
+          <h5>$1,835.02</h5>
         </div>
       </div>
       <div className="card">
         <img className="w-[5rem]" src="https://assets.coingecko.com/coins/images/325/large/Tether.png?1668148663" alt="" />
         <div className="card-body">
           <h3>Tether<samp className="text-red-500 font-bold">-0.01%</samp></h3>
-          <p>$1.00</p>
+          <h5>$1.00</h5>
         </div>
       </div>
       <div className="card">
         <img className="w-[5rem]" src="https://assets.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1644979850" alt="" />
         <div className="card-body">
           <h3>BNB<samp className="text-red-500 font-bold">-2.24%</samp></h3>
-          <p>$240.01</p>
+          <h5>$240.01</h5>
         </div>
       </div>
      </div>
@@ -131,16 +131,16 @@ visible={true}
      </div>
      <nav id='page-no'>
     <ul className="page-number">
-    <li className="page-item">
+    <li className="page-item rounded">
     <a className="page-link" href="#" onClick={prePage} >Previous</a>
     </li>
-    <li className="page-item"><a className="page-link" href="#" onClick={nextPage}>Next</a></li>
+    <li className="page-item rounded"><a className="page-link" href="#" onClick={nextPage}>Next</a></li>
     </ul>
     </nav>
 
 
     <div id="choose-section" className="my-10">
-    <h2 className="font-bold text-4xl text-center my-16">WHY CHOOSE US</h2>
+    <h2 className="font-bold text-4xl text-center my-16">WHY <span className="text-colors">CHOOSE US</span></h2>
       <div className="choose-card-section">
       <div className="choose-card-section-1">
       <div className="choose-card rounded-md my-4">
@@ -203,7 +203,7 @@ visible={true}
      <div id="join-section">
      <div className="join-header-section">     
       <h1 className="font-bold text-[5rem] flex justify-between items-center "><img className="hero-img display-none" src="https://coindom-crypto-search.vercel.app/static/media/bitcoin.e146d46fb598ae0d8f43.png" alt="" />JOIN US VIA <img className="hero-img display-none" src="https://coindom-crypto-search.vercel.app/static/media/ethereum.c6cffe78f0c6abc85da9.png" alt="" /></h1>
-      <h4 className="font-bold text-[6rem] ">DISCORD</h4>
+      <h4 className="font-bold text-[6rem] text-colors">DISCORD</h4>
       <p className="font-bold text-lg my-10">Invest and manage all your crypto at one place.</p>
       <a href="#" className="join-btn">Join via Discord</a>
      </div>

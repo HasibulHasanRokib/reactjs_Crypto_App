@@ -24,7 +24,7 @@ useEffect(()=>{
     <section>
      <div className="detail__body">
       <div className="content">
-        <h1 className="title font-bold text-2xl">{data.id}</h1>
+        <h2 className="title font-bold text-2xl">{data.id}</h2>
       </div>
       <div className="content">
         <p className="font-bold text-xl">Rank # {data.market_cap_rank}</p>
