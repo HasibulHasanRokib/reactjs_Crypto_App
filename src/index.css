@@ -19,7 +19,8 @@ body{
     flex-direction: column;
     background-image: linear-gradient(0deg,#0f051d 30%,#130749 70%);
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    margin-top: -2rem;
 
 }
 h1{
