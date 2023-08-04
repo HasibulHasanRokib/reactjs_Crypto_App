@@ -1,88 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+}
 
 body{
-    background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-       
+       background-color: white;
+       color: #24243e;
 }
-h1{
-    font-size: 5rem;
-    font-weight: 800;
-    text-align: center;
-    background: -webkit-linear-gradient(
-        #34e89e,
-        #e4e5e6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    
-}
-.header-body{
-    width: 70%;
-    margin: 5rem auto;
-}
-h2{
-    font-size: 2.5rem;
-}
-.heading{
+#home{
     display: flex;
     justify-content: center;
-    color: #fff;
-    font-size: 1.5rem;
-    gap: 1rem;
     align-items: center;
-    margin-top: 2rem;
-    cursor: pointer;
+    flex-direction: column;
+
 }
+h1{
+    margin-top: 8rem;
+}
+#choose-section{
+    padding: 1rem;
+
+}
+.choose-card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.choose-card-section-2{
+width: 20rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+
 .app__body{
-    /* background-color: aqua; */
-    height: 100vh;
-    width: 1200px;
-    margin:0 auto;
-    margin-top: 1rem;
+width: 85%;
+margin: 1rem auto;
+padding: 1rem;
+}
+.card{
+    width: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-img{
+    width: 8rem;
+    margin: 0 2rem;
+    animation: move 2s infinite;
+}
+@keyframes move{
+    0%,100%{
+        transform: translateY(0) scale(.70);
+    }
+    50%{
+        transform: translateY(-20px) scale(.70);
+
+    }
+}
+.header-section{
+
+}
+table,th,tr,td{
+padding: 0.5rem;
+border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.market-section{
+    margin-top: 8rem;
+}
+.choose-section {
+    padding: 1rem;
+}
+.choose-card{
+    padding: 1rem;
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.choose-card i{
+    background: linear-gradient(25deg,#2600fc,#ff00ea); 
+    padding: 1rem;
+    color: white;
+    border-radius: 50%;
 }
 .detail__body{
-    /* background-color: aqua; */
     height: 100vh;
-    width: 900px;
-    margin:0 auto;
-    margin-top: 1rem;
+    width: 80%;
+    margin:2rem auto;
 }
 .item__head {
     align-items: center;
-    background-color: #34e89e;
     border-radius: 8px;
-    box-shadow: 0 0 12px #18191b;
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     justify-content: space-between;
     margin: 2rem 1rem;
     padding: 0.7rem 1rem;
     color: #24243e; 
     font-weight: 600;
 }
+#join-section{
+    margin: 4rem 0;
+    display: flex;
+}
+.join-header-section{
+    text-align: center;
+    margin: 5rem auto;
+    height: 30rem;
+}
+.join-btn{
+   background: linear-gradient(25deg,#a291ff,#ff00ea); 
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.footer-section{
+    background-image: url(https://coindom-crypto-search.vercel.app/static/media/footer-bg.e33c036e05f949cf81cb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 20rem;
+}
 .item__head > div{
     text-align: center;
-    /* border: 3px solid black; */
     margin-right: 5rem;
 
 }
 .coin__row{
     align-items: center;
-    background-color: #302b63;
     border-radius: 8px;
-    box-shadow: 0 0 12px #18191b;
     display: flex;
     justify-content: space-between;
     margin: 2rem 1rem;
     padding: 0.7rem 1rem;
-    color: #fff; 
     cursor: pointer;
     transition: all 0.3s linear;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .coin__row:hover{
     transform: scale(1.02);
-    /* background-color: #333; */
 }
 .coin__img{
     width: 35px;
@@ -90,11 +174,9 @@ h2{
 }
 .link__name{
     text-decoration: none;
-    color: #fff;
 }
 .page-link{
     background: content-box;
-    color: #fff;
 }
 .page-number{
     display: flex;
@@ -105,22 +187,24 @@ h2{
 }
 .page-item{
     list-style: none;
+    background: linear-gradient(25deg,#a291ff,#ff00ea); 
+    padding: 1rem;
+    color: white;
     font-weight: bold;
+    border-radius: 10px;
+    width: 10rem;
+    text-align: center;
+    
 }
-.page-item:hover{
-    color: #34e89e;
-}
-.page-item.active{
-    color: #34e89e;
+.price-btn{
+  display: none;
 }
 
 
 
 .content{
-    background-color: #18191b;
     border-radius: 8px;
     /* box-shadow: 0 0 12px #18191b; */
-    color: #fff;  
     margin: 2rem 1rem;
     padding: 0.7rem 1rem; 
 }
@@ -143,13 +227,13 @@ h2{
 }
 .title-two{
     display: flex;
-    /* justify-content: space-between; */
     gap: 32rem;
 }
 .row{
     display: grid;
-    grid-template-columns: auto auto;
-    /* border-bottom: 1px solid #5f5252; */
+    grid-template-columns:repeat(2,1fr);
+    padding: 0.5rem 1rem;
+    border: 1px solid #5f5252;
     align-items: center;
 }
 .row h4{
@@ -161,30 +245,84 @@ h2{
     display: grid;
     grid-template-columns: auto auto;
 }
-@media screen and (max-width:500px) {
-    .app__body{
-        width: 100%;
-        height: auto;
-    }
-    .header-body{
-        width: 100%;
-    }
-    h1{
-        font-size: 3rem;
-    }
-    .item__head{
-        margin: 0;
-    }
+
+
+
+@media screen and (max-width:768px) {
     .display-none{
         display: none;
     }
+    .navbar{
+        padding: 1rem;
+    }
+    .app__body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .header-section h1{
+        font-size: 3rem;
+    }
+    .header-section p{
+     font-size: 3rem;
+    }
+    .header-section{
+      text-align: center;
+    }
+    .price-btn{
+        display: inline;
+        background: linear-gradient(25deg,#a291ff,#ff00ea); 
+        padding: 1rem;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        width: 10rem;
+        text-align: center;
+        margin: 3rem 0;  
+    }
+    .item__head > div{
+        margin-right: 4.3rem;
+    } 
+    .choose-card-section{
+        flex-direction: column;
+    }
+    #join-section{
+        margin: 0;
+        display: inline;
+    }
+    .join-header-section{
+        height: auto;
+        text-align: center;
+        margin: 0;
+    }
+    .join-header-section h1{
+        font-size: 3rem;
+        flex-direction: column;
+    }
+    .join-header-section h4{
+        font-size: 3rem;
+    }
+    .footer-section{
+        background-image: none;
+    }
+    #market-section{
+        margin-top: 5.8rem;
+    }
     .detail__body{
+        height: auto;
         width: 100%;
     }
+    .title-two{
+        gap: 0;
+    }
+    .status{
+        display: inline;
+    }
+    .about-section{
+        width: 20rem;
+        overflow: hidden;
+    }
 }
-
-
-
 
 
 

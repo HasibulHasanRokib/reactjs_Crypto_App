@@ -24,18 +24,18 @@ useEffect(()=>{
     <section>
      <div className="detail__body">
       <div className="content">
-        <h1 className="title">{data.id}</h1>
+        <h1 className="title font-bold text-2xl">{data.id}</h1>
       </div>
       <div className="content">
-        <p className="rank">Rank # {data.market_cap_rank}</p>
+        <p className="font-bold text-xl">Rank # {data.market_cap_rank}</p>
         <div className="title-two">
         <div>
         {data.image ? <img src={data.image.small} className="m-2" alt="" srcSet="" /> :null }
         
-        <samp className="name">{data.name}</samp>
+        <samp className="font-bold text-xl">{data.name}</samp>
           <samp className="m-4">{data.symbol}/USD</samp>
         </div>
-        {data.market_data ?.current_price ? <p>${data.market_data.current_price.usd}</p> :null }
+        {data.market_data ?.current_price ? <p className="font-bold text-2xl">${data.market_data.current_price.usd}</p> :null }
         
         </div>
       </div>
@@ -69,7 +69,7 @@ useEffect(()=>{
       
       </div>
       <div className="content">
-        <table className="table table-dark  ">
+        <table className="table">
           <thead>
             <tr>
               <th>1h</th>
@@ -95,8 +95,8 @@ useEffect(()=>{
         </table>
       </div>
       <div className="content">
-        <h4>About</h4>
-        <p>{data.description ? data.description.en :null}</p>
+        <h4 className="font-bold text-xl">About</h4>
+        <p className="about-section">{data.description ? data.description.en :null}</p>
         
       </div>
 
